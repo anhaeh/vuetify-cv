@@ -1,0 +1,43 @@
+{
+  "common": {
+    "software_engineer": "Software Engineer"
+  },
+  "header": {
+    "show_menu": "Show/hide menú",
+    "language": "Language",
+    "english": "English",
+    "spanish": "Spanish",
+    "employment": "Career",
+    "skills": "Techs",
+    "education": "Education",
+    "home": "Home",
+    "not_found": "Page not found"
+  },
+  "404": "The site configured at this address does not contain the requested file",
+  "home": {
+    "about_me": "In continuous search for new challenges. I am passionate about technology and overcome the obstacles that arise on a daily basis. I like teamwork, being able to share knowledge and experiences among my colleagues. My interest is to belong to a company with a good working environment with great challenges, where I can contribute my knowledge and acquired experiences"
+  },
+  "employment": {
+    "support": "Technical support. Maintenance of servers",
+    "tech_lead": "Tech Lead & Full Stack Python/Vue Developer",
+    "full_stack_php": "Full Stack PHP developer",
+    "full_stack": "Full Stack Python developer"
+  },
+  "skills": {
+    "databases": "Databases",
+    "languages": "Programming languages",
+    "libs": "Libs",
+    "others": "Others",
+    "os": "OS",
+    "frameworks": "Frameworks"
+  },
+  "education": {
+    "secondary": "Technical in constructions",
+    "analyst": "Software analyst. Avg: 7.3",
+    "engineer": "Software Engineer. Avg: 7.6",
+    "course_leader": "Leadership course. 56hs",
+    "university": "University",
+    "course": "Course",
+    "high_school": "High School"
+  }
+}

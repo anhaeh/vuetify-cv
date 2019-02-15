@@ -1,0 +1,44 @@
+{
+  "common": {
+    "software_engineer": "Ingeniero en Sistemas"
+  },
+  "header": {
+    "show_menu": "Mostar/ocultar menú",
+    "language": "Idioma",
+    "english": "Ingles",
+    "spanish": "Español",
+    "employment": "Desarrollo profesional",
+    "skills": "Lenguajes y tecnologías",
+    "education": "Educación",
+    "home": "Inicio",
+    "not_found": "Pagina no encontrada"
+  },
+  "404": "El sitio configurado en esta dirección no contiene el archivo solicitado",
+  "home": {
+    "about_me": "En búsqueda continua de nuevos desafíos. Me apasiona la tecnología y superar los obstáculos que se presentan en el día a día. Me gusta el trabajo en equipo, poder compartir conocimientos y experiencias entre mis colegas. Mi interés es pertenecer a una empresa con un buen clima laboral con grandes desafíos, donde pueda aportar mis conocimientos y experiencias adquiridas."
+  },
+  "employment": {
+    "support": "Soporte Técnico. Mantenimiento de servidores",
+    "tech_lead": "Líder de equipo & Desarrollador Full Stack Python/Vue",
+    "full_stack_php": "Desarrollador Full Stack Php",
+    "full_stack": "Desarrollador Full Stack Python"
+
+  },
+  "skills": {
+    "databases": "Bases de datos",
+    "languages": "Lenguajes de programación",
+    "libs": "Librerías",
+    "others": "Otros",
+    "os": "Sistemas operativos",
+    "frameworks": "Frameworks"
+  },
+  "education": {
+    "secondary": "Maestro mayor de obras",
+    "analyst": "Analista de sistemas. Promedio: 7.3",
+    "engineer": "Ingeniería en Informática. Promedio: 7.6",
+    "course_leader": "Curso Liderzgo. 56hs",
+    "university": "Universitario",
+    "course": "Curso",
+    "high_school": "Educación Secundaria"
+  }
+}
