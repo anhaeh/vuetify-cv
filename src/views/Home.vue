@@ -3,7 +3,7 @@
     <v-layout justify-center align-center>
       <v-flex xs12 md8>
         <div class="text-xs-center">
-          <v-avatar :size="200">
+          <v-avatar :size="200" class="pt-5">
             <img class="elevation-6" src="@/assets/images/profile.jpeg" alt="andres">
           </v-avatar>
 
@@ -30,6 +30,5 @@
 <style scoped>
   .v-avatar {
     z-index: 2;
-    padding-top: 100px;
   }
 </style>

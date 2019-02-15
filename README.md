@@ -1,3 +1,5 @@
+[Live Preview](https://vuetify-cv.firebaseapp.com/)
+
 # vue-cv
 
 ## Project setup
