@@ -1,35 +1,11 @@
 <template>
     <v-list dense dark>
-        <v-list-tile @click="$router.push({name : 'home'})">
+        <v-list-tile v-for="item in menu" @click="$router.push({name : item.route})" :key="item.title">
             <v-list-tile-action>
-                <v-icon>home</v-icon>
+                <v-icon>{{ item.icon }}</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-                <v-list-tile-title>{{ $t('header.home')}}</v-list-tile-title>
-            </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile @click="$router.push({name : 'employment'})">
-            <v-list-tile-action>
-                <v-icon>business_center</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-                <v-list-tile-title>{{ $t('header.employment')}}</v-list-tile-title>
-            </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile @click="$router.push({name : 'education'})">
-            <v-list-tile-action>
-                <v-icon>school</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-                <v-list-tile-title>{{ $t('header.education')}}</v-list-tile-title>
-            </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile @click="$router.push({name : 'skills'})">
-            <v-list-tile-action>
-                <v-icon>code</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-                <v-list-tile-title>{{ $t('header.skills')}}</v-list-tile-title>
+                <v-list-tile-title>{{ $t(`header.${item.title}`)}}</v-list-tile-title>
             </v-list-tile-content>
         </v-list-tile>
     </v-list>
@@ -37,7 +13,17 @@
 
 <script>
 export default {
-    name: "Menu"
+    name: "Menu",
+    data () {
+        return {
+            menu: [
+                { icon: 'home', route: 'home', title: 'home' },
+                { icon: 'business_center', route: 'employment', title: 'employment' },
+                { icon: 'school', route: 'education', title: 'education' },
+                { icon: 'code', route: 'skills', title: 'skills' }
+            ]
+        }
+    }
 }
 </script>
 
