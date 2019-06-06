@@ -52,7 +52,7 @@ export default {
                   items: [
                       { name: 'Django' , score: 4.5 },
                       { name: 'Flask' , score: 4.5 },
-                      { name: 'VueJs' , score: 4 },
+                      { name: 'VueJs 2' , score: 4 },
                       { name: 'AngularJs' , score: 3 },
                       { name: 'Laravel' , score: 3 }
                   ]
@@ -61,7 +61,7 @@ export default {
                   text: 'skills.libs',
                   color: 'red darken-1',
                   items: [
-                      { name: 'Bootstrap' , score: 4.5 },
+                      { name: 'Bootstrap 3/4' , score: 4.5 },
                       { name: 'Jquery' , score: 4 },
                       { name: 'Python Behave' , score: 3.5 },
                       { name: 'UnitTest' , score: 4 },
@@ -95,6 +95,7 @@ export default {
                       { name: 'Memcached' , score: 4.5 },
                       { name: 'Gunicorn' , score: 4 },
                       { name: 'RabbitMQ' , score: 4 },
+                      { name: 'Webpack' , score: 3.5 },
                       { name: 'Nginx' , score: 3.5 },
                       { name: 'Jenkins' , score: 3.5 },
                       { name: 'Docker' , score: 3 },
