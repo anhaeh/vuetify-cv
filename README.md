@@ -1,4 +1,4 @@
-[Live Preview](https://andres-haehnel-cv.firebaseapp.com/)
+[Live Preview](https://andres-haehnel-cv.web.app/)
 
 # vue-cv
 
