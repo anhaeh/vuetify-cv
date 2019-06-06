@@ -4,10 +4,12 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141609371-1"></script>
     <script>
+      window.GA_TRACKING_ID = 'UA-141609371-1';
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-141609371-1');
+      gtag('config', GA_TRACKING_ID, { app_name: 'vue cv', send_page_view: false });
+
     </script>
 
     <meta charset="utf-8">

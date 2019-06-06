@@ -9,7 +9,7 @@ import Education from './views/Education.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -52,3 +52,15 @@ export default new Router({
       },
   ]
 })
+
+/** google analitycs **/
+router.afterEach((to) => {
+  // eslint-disable-next-line
+  gtag('config', window.GA_TRACKING_ID, {
+    page_path: to.fullPath,
+    app_name: 'vue cv',
+    send_page_view: true,
+  })
+})
+
+export default router
