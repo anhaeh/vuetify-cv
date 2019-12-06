@@ -59,7 +59,7 @@ router.afterEach((to) => {
   gtag('config', window.GA_TRACKING_ID, {
     page_path: to.fullPath,
     app_name: 'vue cv',
-    send_page_view: true,
+    send_page_view: true
   })
 })
 

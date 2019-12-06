@@ -3,7 +3,8 @@
     "software_engineer": "Software Engineer"
   },
   "header": {
-    "show_menu": "Show/hide menú",
+    "show_menu": "Show menu",
+    "hide_menu": "Hide menu",
     "language": "Language",
     "english": "English",
     "spanish": "Spanish",

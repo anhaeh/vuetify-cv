@@ -19,39 +19,56 @@
         <Menu></Menu>
     </v-navigation-drawer>
     <v-toolbar :color="color" dark fixed app>
-        <v-toolbar-side-icon @click.stop="drawer = !drawer" :title="$t('header.show_menu')"></v-toolbar-side-icon>
+         <v-tooltip bottom close-delay="0">
+          <template v-slot:activator="{ on }">
+            <v-toolbar-side-icon v-on="on" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+          </template>
+          <span>{{ $t(titleHamburger) }}</span>
+        </v-tooltip>
         <v-toolbar-title class="text-capitalize">{{ $t('header.' + $route.name) }}</v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-btn flat fab href="https://www.linkedin.com/in/andreshaehnel/" title="Linkedin">
-          <img src="@/assets/images/linkedin.png">
-        </v-btn>
-        <v-btn flat fab href="https://github.com/anhaeh" title="GitHub">
-          <img src="@/assets/images/github-box.png">
-        </v-btn>
-        <Lang></Lang>
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn v-on="on" flat fab href="https://www.linkedin.com/in/andreshaehnel/">
+              <img src="@/assets/images/linkedin.png">
+            </v-btn>
+          </template>
+          <span>Linkedin</span>
+        </v-tooltip>
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn v-on="on" flat fab href="https://github.com/anhaeh">
+              <img src="@/assets/images/github-box.png">
+            </v-btn>
+          </template>
+          <span>GitHub</span>
+        </v-tooltip>
+        <LangSwitcher>
+        </LangSwitcher>
     </v-toolbar>
     </span>
 </template>
 
 <script>
 import Menu from './Menu'
-import Lang from './Lang'
+import LangSwitcher from './LangSwitcher'
 
 export default {
     name: "Header",
     components: {
         Menu,
-        Lang
+        LangSwitcher
     },
     props: ['color'],
     data () {
         return {
             drawer: null,
         }
+    },
+    computed: {
+        titleHamburger: function() {
+            return this.drawer ? 'header.hide_menu' : 'header.show_menu'
+        }
     }
 }
 </script>
-
-<style scoped>
-
-</style>

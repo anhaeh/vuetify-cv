@@ -1,8 +1,13 @@
 <template>
     <v-menu offset-y bottom transition="slide-y-transition">
-        <v-btn flat fab slot="activator">
-            <v-icon :title="$t('header.language')">translate</v-icon>
-        </v-btn>
+        <v-tooltip bottom slot="activator" z-index="0">
+          <template v-slot:activator="{ on }">
+            <v-btn v-on="on" flat fab>
+                <v-icon>translate</v-icon>
+            </v-btn>
+          </template>
+          <span>{{ $t('header.language') }}</span>
+        </v-tooltip>
         <v-list>
             <v-list-tile v-for="lang in languages" @click="setLanguage(lang.value)" v-show="lang.value !== $i18n.locale"
                          :title="lang.text" :key="`lang-${lang.value}`">
@@ -19,7 +24,7 @@ import es from '@/assets/images/es.svg'
 import gb from '@/assets/images/gb.svg'
 
 export default {
-    name: "Lang",
+    name: "LangSwitcher",
     computed: {
         languages: function () {
             return [
@@ -35,11 +40,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-
-</style>
-
-<style scoped>
-
-</style>

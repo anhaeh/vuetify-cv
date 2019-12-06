@@ -3,7 +3,8 @@
     "software_engineer": "Ingeniero en Sistemas"
   },
   "header": {
-    "show_menu": "Mostar/ocultar menú",
+    "show_menu": "Mostar menú",
+    "hide_menu": "Ocultar menú",
     "language": "Idioma",
     "english": "Ingles",
     "spanish": "Español",
