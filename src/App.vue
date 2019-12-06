@@ -2,7 +2,9 @@
   <v-app id="inspire">
     <Header :color="color"></Header>
     <v-content>
-      <router-view></router-view>
+    <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </v-content>
     <Footer :color="color"></Footer>
   </v-app>
@@ -25,3 +27,12 @@ export default {
   }
 }
 </script>
+
+<style>
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .3s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+</style>
