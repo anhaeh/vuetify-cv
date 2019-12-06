@@ -62,6 +62,13 @@ export default {
                 title: 'Kiu System Solutions',
                 description: 'employment.tech_lead',
                 city: "Ciudad Autónoma de Buenos Aires"
+            },
+            {
+                color: 'teal',
+                year: '2020',
+                title: 'Kiu System Solutions',
+                description: 'employment.architect',
+                city: "Ciudad Autónoma de Buenos Aires"
             }
         ]
     })

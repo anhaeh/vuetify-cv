@@ -24,8 +24,6 @@ function getLocale() {
     return locale
 }
 
-
-
 export default new VueI18n({
   locale: getLocale(),
   fallbackLocale: 'en',

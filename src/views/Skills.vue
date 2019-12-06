@@ -52,7 +52,7 @@ export default {
                   items: [
                       { name: 'Django' , score: 4.5 },
                       { name: 'Flask' , score: 4.5 },
-                      { name: 'VueJs 2' , score: 4 },
+                      { name: 'VueJs 2' , score: 4.5 },
                       { name: 'AngularJs' , score: 3 },
                       { name: 'Laravel' , score: 3 }
                   ]
@@ -63,8 +63,8 @@ export default {
                   items: [
                       { name: 'Bootstrap 3/4' , score: 4.5 },
                       { name: 'Jquery' , score: 4 },
-                      { name: 'Python Behave' , score: 3.5 },
                       { name: 'UnitTest' , score: 4 },
+                      { name: 'Python Behave' , score: 3.5 },
                       { name: 'BulmaCss' , score: 3.5 }
                   ]
               },
@@ -95,12 +95,12 @@ export default {
                       { name: 'Memcached' , score: 4.5 },
                       { name: 'Gunicorn' , score: 4 },
                       { name: 'RabbitMQ' , score: 4 },
-                      { name: 'Webpack' , score: 3.5 },
+                      { name: 'Webpack' , score: 4 },
                       { name: 'Nginx' , score: 3.5 },
                       { name: 'Jenkins' , score: 3.5 },
-                      { name: 'Docker' , score: 3 },
-                      { name: 'Vagrant' , score: 3 },
-                      { name: 'Redis' , score: 3 }
+                      { name: 'Docker' , score: 3.5 },
+                      { name: 'Vagrant' , score: 3.5 },
+                      { name: 'Redis' , score: 3.5 }
                   ]
               }
           ]

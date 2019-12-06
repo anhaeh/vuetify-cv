@@ -21,7 +21,8 @@
     "support": "Technical support. Maintenance of servers",
     "tech_lead": "Tech Lead & Full Stack Python/Vue Developer",
     "full_stack_php": "Full Stack PHP developer",
-    "full_stack": "Full Stack Python developer"
+    "full_stack": "Full Stack Python developer",
+    "architect": "Software architect"
   },
   "skills": {
     "databases": "Databases",
