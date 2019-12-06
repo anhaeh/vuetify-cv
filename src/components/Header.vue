@@ -21,7 +21,7 @@
     <v-toolbar :color="color" dark fixed app>
          <v-tooltip bottom close-delay="0">
           <template v-slot:activator="{ on }">
-            <v-toolbar-side-icon v-on="on" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+            <v-toolbar-side-icon v-on="isDesktop && on" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
           </template>
           <span>{{ $t(titleHamburger) }}</span>
         </v-tooltip>
@@ -68,6 +68,9 @@ export default {
     computed: {
         titleHamburger: function() {
             return this.drawer ? 'header.hide_menu' : 'header.show_menu'
+        },
+        isDesktop: function () {
+            return window.outerWidth > 960
         }
     }
 }
